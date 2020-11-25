@@ -107,15 +107,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
                 List<Users> users1 = response.body();
                 for( Users users :users1){
-                    String content = "";
-                    content+= "\nName : "+users.getName();
-                    content+="\nAddress/geo/lat : "+users.getAddress().getLocation().getLat();
-                    content+="\nAddress/geo/lng : "+users.getAddress().getLocation().getLng();
                     Latitude = Double.parseDouble(users.getAddress().getLocation().getLat());
                     Longitude = Double.parseDouble(users.getAddress().getLocation().getLng());
                     userName = users.getName() ;
-                    content+= "\n\n\n\n ";
-                    System.out.println("DATA: ++++++++++++>>>>>>>>>>>>>>>>>>> "+content);
                     setUserMarker(googleMap,Latitude,Longitude,userName);
 
                 }
