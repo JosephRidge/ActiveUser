@@ -3,6 +3,8 @@
 Purpose : Consume an online JSONAPI (".https://jsonplaceholder.typicode.com/" under the users resource
 
 *Tools/ Dependencies :*
+- Retrofit2
+- gsonConverter
 - SearchView 
 - RecyclerView
 - Pojo
