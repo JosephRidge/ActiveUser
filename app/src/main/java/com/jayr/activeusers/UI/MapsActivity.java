@@ -1,4 +1,4 @@
-package com.jayr.activeusers;
+package com.jayr.activeusers.UI;
 
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
@@ -23,6 +23,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.jayr.activeusers.Adapters.UserAdapter;
 import com.jayr.activeusers.Models.Users;
+import com.jayr.activeusers.R;
 import com.jayr.activeusers.Repository.UserClient;
 import com.jayr.activeusers.Repository.UserInterface;
 import com.jayr.activeusers.ViewModel.LocationViewModel;

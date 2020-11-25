@@ -1,4 +1,4 @@
-package com.jayr.activeusers;
+package com.jayr.activeusers.UI;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +18,7 @@ import android.widget.Button;
 
 import com.jayr.activeusers.Adapters.UserAdapter;
 import com.jayr.activeusers.Models.Users;
+import com.jayr.activeusers.R;
 import com.jayr.activeusers.ViewModel.UserViewModel;
 
 import java.util.List;
