@@ -1,6 +1,6 @@
-# ActiveUser
+# ActiveUser ReadMe
 
-Purpose : Consume an online JSONAPI (".https://jsonplaceholder.typicode.com/" under the users resource
+Objective : Consume an online JSONAPI (".https://jsonplaceholder.typicode.com/" under the **users** resource
 
 *Tools/ Dependencies :*
 - Retrofit2
@@ -42,14 +42,14 @@ Purpose : Consume an online JSONAPI (".https://jsonplaceholder.typicode.com/" un
 *Recycler View :* 
 To achieve this we need three parts: 
 -  Adapter
-- xml file holding the rcyclerview widget
-- xml file holdin the data view or rather how your view would look to the user
+- xml file holding the recyclerview widget
+- xml file holding the data view or rather how your view would look to the user
 
 
 *Design Pattern*
  Model View View Model
  - create modules withing your class dir
- - we will have threee classes since we will also be querying nested object data : 
+ - we will have three classes since we will also be querying nested object data : 
      - Users ( will carry user data )
      - Address ( will hold the User Address object )
      - Location ( will hold the User geolocation data object ) 
