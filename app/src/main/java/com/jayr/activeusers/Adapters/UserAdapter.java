@@ -22,6 +22,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> im
     Context context;
     List<Users> usersList;
     List<Users>usersListAll; //contain all users without being filtered
+    ArrayList<String>lat;
+    ArrayList<String>lng;
 
     public UserAdapter(Context context, List<Users> usersList) {
         this.context = context;
@@ -58,7 +60,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> im
             filterResults.values=filterList;
             return filterResults;
         }
-        //run on a ui thread
+        //        run on a ui thread
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
             usersList.clear();
@@ -68,7 +70,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> im
     };
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView textView,email,phoneNumber;
+        TextView textView,email;
 
         public ViewHolder(View view) {
             super(view);
@@ -99,4 +101,5 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> im
     public int getItemCount() {
         return usersList.size();
     }
+
 }

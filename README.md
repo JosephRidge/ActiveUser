@@ -10,30 +10,30 @@ Objective : Consume an online JSONAPI (".https://jsonplaceholder.typicode.com/" 
 - Pojo
 - Google Maps
 
-    //    Navigation
+    # Navigation
     def navigationVersion = '2.3.1'
     implementation 'com.google.android.material:material:1.2.1'
     implementation "androidx.navigation:navigation-fragment:$navigationVersion"
     implementation "androidx.navigation:navigation-ui:$navigationVersion"
 
-    //    Maps utils for clustering
+    # Maps utils for clustering
     implementation 'com.google.maps.android:android-maps-utils:2.0.3'
 
-    //    CardView
+    # CardView
     implementation "androidx.cardview:cardview:1.0.0"
 
-    // Retrofit2 dependency
+    # Retrofit2 dependency
     def Retrofit2Version ='2.9.0'
     implementation "com.squareup.retrofit2:retrofit:$Retrofit2Version"
-    //  Gson converter
+    #  Gson converter
     implementation "com.squareup.retrofit2:converter-gson:$Retrofit2Version"
 
-    // RecyclerView
+    # RecyclerView
     implementation "androidx.recyclerview:recyclerview:1.1.0"
-    // For control over item selection of both touch and mouse driven selection
+    # For control over item selection of both touch and mouse driven selection
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc03"
 
-    // MVVM dependencies
+    # MVVM dependencies
     def version= '1.1.1'
     implementation "android.arch.lifecycle:extensions:$version"
     annotationProcessor "android.arch.lifecycle:compiler:$version"
