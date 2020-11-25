@@ -40,8 +40,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    ArrayList lat;
-    ArrayList lng;
     Double Latitude;
     Double Longitude;
     String userName;
@@ -53,9 +51,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
        LocationViewModel locationViewModel = ViewModelProviders.of(this).get(LocationViewModel.class);
-
         locationViewModel.getUserLocations().observe(this, new Observer<List<Users>>() {
             @Override
             public void onChanged(@Nullable List<Users> usersList) {
@@ -67,12 +63,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        Double lat;
-        Double lng ;
-
         mMap = googleMap;
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(37.3159, -81.1496);
+ /*
+    What configs that come with the inital map
+   LatLng sydney = new LatLng(37.3159, -81.1496);
         mMap.addMarker(new MarkerOptions().
                 position(sydney)
                 .title("Lean Graham")
@@ -81,7 +76,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(sydney, 12), 3000, null);
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-
+*/
         getUserLocations(mMap);
 
     }
@@ -97,10 +92,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     public  void getUserLocations(GoogleMap googleMap){
-//         lat = new ArrayList();
-//         lng = new ArrayList();
-
-       LocationViewModel locationViewModel = ViewModelProviders.of(this).get(LocationViewModel.class);
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://jsonplaceholder.typicode.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -116,13 +107,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }
                 List<Users> users1 = response.body();
                 for( Users users :users1){
-//                    lat.add(users.getAddress().getLocation().getLat());
-//                    lng.add(users.getAddress().getLocation().getLng());
                     String content = "";
                     content+= "\nName : "+users.getName();
                     content+="\nAddress/geo/lat : "+users.getAddress().getLocation().getLat();
                     content+="\nAddress/geo/lng : "+users.getAddress().getLocation().getLng();
-//                        content+="\nGeo : "+users.getGeo();
                     Latitude = Double.parseDouble(users.getAddress().getLocation().getLat());
                     Longitude = Double.parseDouble(users.getAddress().getLocation().getLng());
                     userName = users.getName() ;
