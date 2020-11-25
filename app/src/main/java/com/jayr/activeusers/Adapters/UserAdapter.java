@@ -75,7 +75,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> im
 
             textView = view.findViewById(R.id.user_details);
             email = view.findViewById(R.id.user_email);
-            phoneNumber = view.findViewById(R.id.user_phone);
+//            phoneNumber = view.findViewById(R.id.user_phone);
         }
     }
 
@@ -90,7 +90,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> im
     public void onBindViewHolder(@NonNull UserAdapter.ViewHolder holder, int position) {
 //    Users users = usersList.get(position);
         holder.textView.setText(this.usersList.get(position).getName());
-        holder.phoneNumber.setText(this.usersList.get(position).getPhone());
+//        holder.phoneNumber.setText(this.usersList.get(position).getPhone());
         holder.email.setText(this.usersList.get(position).getEmail());
 
     }
