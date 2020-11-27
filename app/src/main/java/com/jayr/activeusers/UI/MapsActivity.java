@@ -21,15 +21,11 @@ import com.google.android.gms.maps.model.BitmapDescriptor;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.jayr.activeusers.Adapters.UserAdapter;
 import com.jayr.activeusers.Models.Users;
 import com.jayr.activeusers.R;
-import com.jayr.activeusers.Repository.UserClient;
 import com.jayr.activeusers.Repository.UserInterface;
 import com.jayr.activeusers.ViewModel.LocationViewModel;
-import com.jayr.activeusers.ViewModel.UserViewModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -134,7 +130,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .icon(bitmapDescriptorFromVector(this,R.drawable.user)));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(userLoc));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLoc, 12), 3000, null);
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLoc, 5), 3000, null);
         mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 
     }
