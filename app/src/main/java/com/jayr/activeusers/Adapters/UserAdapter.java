@@ -34,7 +34,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> im
 
     public UserAdapter() {
     }
-
+// Search implementations
     @Override
     public Filter getFilter() {
         return filter;

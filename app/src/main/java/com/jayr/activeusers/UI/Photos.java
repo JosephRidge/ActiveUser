@@ -7,9 +7,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.jayr.activeusers.R;
 
 public class Photos extends AppCompatActivity {
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photos);
 
     }
+
+
 }
