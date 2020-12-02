@@ -127,7 +127,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().
                 position(userLoc)
                 .title(userName)
-                .icon(bitmapDescriptorFromVector(this,R.drawable.user)));
+                .icon(bitmapDescriptorFromVector(this,R.drawable.users)));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(userLoc));
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(userLoc, 5), 3000, null);

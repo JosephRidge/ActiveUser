@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private UserAdapter userAdapter;
     private DividerItemDecoration dividerItemDecoration;
-    private Button user_locations;
+    private Button userLocations;
+    private Button userGallery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,13 +53,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        user_locations = findViewById(R.id.to_maps);
-        user_locations.setOnClickListener(new View.OnClickListener() {
+        userLocations = findViewById(R.id.to_maps);
+        userGallery = findViewById(R.id.to_photos);
+        userLocations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, MapsActivity.class);
                 startActivity(i);
 
+            }
+        });
+        userGallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Photos.class);
+                startActivity(i);
             }
         });
     }
@@ -67,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
         MenuItem item = menu.findItem(R.id.action_search);
         SearchView searchView = (SearchView) item.getActionView();
+        searchView.setQueryHint("Current User");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
