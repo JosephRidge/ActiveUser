@@ -57,6 +57,7 @@ To achieve this we need three parts:
  - Repository Module that will serve a purpose of having the API inteface 
  
  
- 
+  *NOTE:* 
+   - Icons used are attained from various www.flaticon.com , and are attributed in the icon xml files
 
  
