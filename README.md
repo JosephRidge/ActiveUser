@@ -57,10 +57,10 @@ To achieve this we need three parts:
  - Repository Module that will serve a purpose of having the API inteface 
  
  *User Interface*
- <img src=“https://github.com/JosephRidge/ActiveUser/app/src/main/res/readmeImages/splashscreen.png”>
-  ![Design of SplashScreen ](https://github.com/JosephRidge/ActiveUser/app/src/main/res/readmeImages/splashscreen.png)
-  ![Design of User Location Activity page ](https://github.com/JosephRidge/ActiveUser/app/src/main/res/readmeImages/userLoc.png)
-  ![Design of Employees activity page](https://github.com/JosephRidge/ActiveUser/app/src/main/res/readmeImages/users.png)
+
+ ![splashscreen](https://user-images.githubusercontent.com/42699812/103455050-69b8bf80-4ce1-11eb-8b70-b92ecec789c4.png)
+![userLoc](https://user-images.githubusercontent.com/42699812/103455060-7fc68000-4ce1-11eb-8af6-364d192c8565.png)
+![users](https://user-images.githubusercontent.com/42699812/103455061-8228da00-4ce1-11eb-89e2-131a204f385d.png)
 
   *NOTE:* 
    - Icons used are attained from various www.flaticon.com , and are attributed in the icon xml files
