@@ -61,8 +61,9 @@ To achieve this we need three parts:
  ![splashscreen](https://user-images.githubusercontent.com/42699812/103455050-69b8bf80-4ce1-11eb-8b70-b92ecec789c4.png)
 ![userLoc](https://user-images.githubusercontent.com/42699812/103455060-7fc68000-4ce1-11eb-8af6-364d192c8565.png)
 ![users](https://user-images.githubusercontent.com/42699812/103455061-8228da00-4ce1-11eb-89e2-131a204f385d.png)
+![gallery](https://user-images.githubusercontent.com/42699812/103455234-573f8580-4ce3-11eb-892b-cbcbb4d69999.png)
 
-  *NOTE:* 
+  *NOTE:*
    - Icons used are attained from various www.flaticon.com , and are attributed in the icon xml files
 
  
