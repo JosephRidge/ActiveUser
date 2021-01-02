@@ -64,6 +64,6 @@ To achieve this we need three parts:
 ![gallery](https://user-images.githubusercontent.com/42699812/103455234-573f8580-4ce3-11eb-892b-cbcbb4d69999.png)
 
   *NOTE:*
-   - Icons used are attained from various www.flaticon.com , and are attributed in the icon xml files
+   - Icons used are attained from various designers from www.flaticon.com , and are attributed in the icon xml files
 
  
