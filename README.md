@@ -56,7 +56,7 @@ To achieve this we need three parts:
  - We will have a ViewHolder Module ( handling how data logic to UI )
  - Repository Module that will serve a purpose of having the API inteface 
  
- # *User Interface*
+*User Interface*
 
  ![splashscreen](https://user-images.githubusercontent.com/42699812/103455050-69b8bf80-4ce1-11eb-8b70-b92ecec789c4.png)
 ![userLoc](https://user-images.githubusercontent.com/42699812/103455060-7fc68000-4ce1-11eb-8af6-364d192c8565.png)
