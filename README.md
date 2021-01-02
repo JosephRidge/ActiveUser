@@ -56,7 +56,11 @@ To achieve this we need three parts:
  - We will have a ViewHolder Module ( handling how data logic to UI )
  - Repository Module that will serve a purpose of having the API inteface 
  
- 
+ *User Interface*
+  ![Design of SplashScreen ](https://github.com/JosephRidge/ActiveUser/app/src/main/res/readmeImages/splashscreen.png)
+  ![Design of User Location Activity page ](https://github.com/JosephRidge/ActiveUser/app/src/main/res/readmeImages/userLoc.png)
+  ![Design of Employees activity page](https://github.com/JosephRidge/ActiveUser/app/src/main/res/readmeImages/users.png)
+
   *NOTE:* 
    - Icons used are attained from various www.flaticon.com , and are attributed in the icon xml files
 
